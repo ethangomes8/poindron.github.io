@@ -1,4 +1,4 @@
-/* Style Global */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     color: #333;
 }
 
-/* En-tête */
+
 header {
     background-color: #007BFF;
     color: white;
@@ -21,17 +21,50 @@ header {
     position: relative;
 }
 
-.logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 1.5rem;
+.animated-text {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
     font-weight: bold;
+    text-align: center;
+    opacity: 0; 
+    animation: float 5s ease-in-out 1 forwards;
+    position: relative;
+    color: #000000; 
 }
 
-.logo a {
+@keyframes float {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+
+#logo {
+    width: 10%;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    margin-left: auto;
+}
+
+#logo a {
     color: white;
     text-decoration: none;
+}
+
+header #logo {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    padding: 10px;
 }
 
 
@@ -83,7 +116,7 @@ nav ul li a.active {
 }
 
 
-/* Section Présentation */
+
 #intro {
     text-align: center;
     padding: 4rem 2rem;
@@ -115,7 +148,7 @@ nav ul li a.active {
     background-color: #0056b3;
 }
 
-/* Section Services */
+
 #services {
     padding: 3rem 2rem;
     text-align: center;
@@ -150,18 +183,18 @@ nav ul li a.active {
     margin-bottom: 4rem;
 }
 
-/* Section Témoignages */
+
 #testimonials {
     padding: 3rem 2rem;
     background-color: #f4f4f4;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombre autour de la section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #testimonials h2 {
     font-size: 2.5rem;
     color: #007bff;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  /* Ombre sur le texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .testimonial-grid {
@@ -172,11 +205,11 @@ nav ul li a.active {
 
 .testimonial-grid-2 {
     display: flex;
-    justify-content: center;  /* Centre horizontalement */
-    align-items: center;  /* Centre verticalement */
+    justify-content: center; 
+    align-items: center;  
     margin-top: 1px;
-    font-size: 1.5rem;  /* Augmente la taille des écritures */
-    text-align: center;  /* Centre le texte à l'intérieur de l'élément */
+    font-size: 1.5rem;  
+    text-align: center;
 }
 
 
@@ -200,7 +233,7 @@ nav ul li a.active {
     margin-top: 1rem;
 }
 
-/* Section Contact */
+
 #contact {
     padding: 3rem 2rem;
     background-color: white;
@@ -277,7 +310,7 @@ form.contact-form {
     background-color: #0056b3;
 }
 
-/* Section CTA */
+
 #cta {
     background-color: #007BFF;
     padding: 3rem 1rem;
@@ -304,7 +337,7 @@ form.contact-form {
     background-color: #ccac00;
 }
 
-/* Pied de page */
+
 footer {
     background-color: #333;
     color: white;
@@ -329,9 +362,7 @@ footer p {
     width: 30px;
     height: 30px;
 }
-/* Section Nos Réalisations */
-/* Section Nos Réalisations */
-/* Section Nos Réalisations */
+
 #realisations {
     padding: 3rem 2rem;
     background-color: #f4f4f4;
@@ -351,8 +382,8 @@ footer p {
 }
 
 .realisation-item {
-    width: 40%;  /* Taille augmentée */
-    height: 300px;  /* Taille augmentée */
+    width: 40%;  
+    height: 300px;  
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -372,7 +403,7 @@ footer p {
     transform: scale(1.05);
 }
 
-/* Lightbox */
+
 .lightbox {
     display: none;
     position: fixed;
