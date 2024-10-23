@@ -1,4 +1,6 @@
-
+@media screen {
+    
+}
 * {
     margin: 0;
     padding: 0;
@@ -461,4 +463,68 @@ footer p {
 .avis-btn:active {
     transform: translateY(0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 20%; 
+        top: 10px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .service-grid, .testimonial-grid, .contact-grid, .realisation-grid {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .service-item, .testimonial-item, .contact-item, .realisation-item {
+        width: 90%; 
+        margin-bottom: 2rem; 
+    }
+
+    #intro h1 {
+        font-size: 2.5rem; 
+    }
+
+    #intro p, .contact-form label, .contact-form input, .contact-form textarea {
+        font-size: 1rem; 
+    }
+
+    .btn-primary {
+        width: 100%; 
+    }
+
+    #cta h2 {
+        font-size: 2rem; 
+    }
+
+    footer p {
+        font-size: 0.9rem; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logo {
+        width: 30%; 
+    }
+
+    #services h2, #testimonials h2, #contact h2, #realisations h2 {
+        font-size: 2rem; 
+    }
+
+    .avis-btn {
+        font-size: 1rem; 
+    }
 }
