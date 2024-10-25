@@ -50,9 +50,10 @@ header {
 }
 
 #logo {
-    width: 10%;
+    width: 19%;
+    height: 100%;
     position: absolute;
-    top: 30px;
+    top: 0px;
     left: 0px;
     margin-left: auto;
 }
